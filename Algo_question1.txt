@@ -1,0 +1,12 @@
+How can we modify almost any algorithm to have a good best-case running time?
+
+
+
+
+First of all we don’t have to improve the algorithm for any input, the question demands that we need to improve the algorithm for only best case.
+
+So let us take an example: Selection Sort
+
+This algorithm has a run time of O(n*n), now when the input is already sorted the algorithm’s best case run time still remains O(n*n) due to the nature of the algorithm, but if we can add an extra snippet of code in the beginning of the algorithm, to check if the input is sorted( this can be achieved in O(n) time) , Now for best cases where the inputs are sorted the new algorithm will simply run it in O(n) time.
+
+The solutions that suggest caching I have some reservations because there can be unlimited number of inputs for best case and they all cannot be cached.
